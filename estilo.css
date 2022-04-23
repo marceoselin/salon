@@ -4,7 +4,7 @@
     
 }
 body{
-    background-color :lightgray;
+   background-image:   linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
 }
 .acomodar{
     display:flex;  
@@ -91,12 +91,17 @@ main section ul li{
     min-height: 400px;
     width: 90%;
     background-color:gray;
-    margin:10px auto;
+    margin:15px auto;
     display:grid;
     
 } 
 .producto{
     border: 3px solid rgba(211, 68, 90, 0.849);
+    cursor: pointer;
+}
+.producto:hover{
+    transform: scale(1.05);
+    transition: all 0.75s ;
 }
 .producto1{
    
@@ -148,12 +153,17 @@ main section ul li{
     width: 100%;
     background-color:rgba(224, 155, 165, 0.849) ;
     display:grid;
+    margin-left: 15px;
+    margin-right: 25px;
+    gap: 25px;
     
     
     
 }
 .imag{
     border: 3px solid rgba(211, 68, 90, 0.849);
+    cursor:pointer;
+    gap:20px;
 }
 .imag:hover{
     transform:scale(1.05);
@@ -188,7 +198,7 @@ main section ul li{
     .section2{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 300px);
-    gap: 10px;
+    gap: 20px;
     }
     .acomodar{
         display: flex;
