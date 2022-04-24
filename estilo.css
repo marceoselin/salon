@@ -4,7 +4,7 @@
     
 }
 body{
-   background-image:   linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+   background-image:   linear-gradient(45deg, #8baaaa 0%, #b87998 100%);
 }
 .acomodar{
     display:flex;  
@@ -200,10 +200,10 @@ main section ul li{
     background-color: coral;
 }
 
-@media only screen and (min-width:320px){
+@media only screen and (min-width:0px) and (max-width:320){
     .section2{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: repeat(2, 150px);
     gap: 20px;
     }
     .acomodar{
@@ -222,9 +222,11 @@ main section ul li{
 }           
         
     
-@media only screen  and (min-width:480px) {
+@media only screen  and (min-width:321px) and (max-width:480px) {
     .section2{
+        grid-template-columns: 1fr 1fr ;
         grid-template-rows: repeat(2, 400px);
+        
         background-color: rgb(115, 192, 192);
         
     }
@@ -242,11 +244,11 @@ main section ul li{
    
 
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 481px){
     .section2{
        
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, 300px);
+        grid-template-rows: repeat(2, 400px);
         background-color:rgba(224, 155, 165, 0.849) ;
     }
     
