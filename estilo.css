@@ -31,7 +31,13 @@ h2{
     width:40%;
     text-align: center;
     font-style: italic;
-    
+    transition:all 1s;
+}    
+h2:hover{
+    transform:scale(1.5, 1);
+    transition: all 1s;
+    color:white;
+    background-color: rgba(187, 112, 112, 0.589);
 }
 .contenedor0{
     display:flex;
@@ -338,6 +344,14 @@ footer div ul{
 main section h1{
     background-color:rgba(224, 155, 165, 0.849) ;
     border: 2px solid rgba(211, 68, 90, 0.849) ;
+    transition: all 2s;
+    
+}
+main section h1:hover{
+    transform: scale(1.5, 1);
+    transition:all 2s ;
+    color:white;
+    background-color: rgba(187, 112, 112, 0.589);
 } 
 section p {
     background-color: rgba(224, 155, 165, 0.849);
