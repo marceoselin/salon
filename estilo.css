@@ -92,6 +92,7 @@ main section ul li{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap:wrap;
 }
 .galeria{
     min-height: 400px;
@@ -390,6 +391,9 @@ footer div h4{
 }
 video{
     border: 2px solid rgba(211, 68, 90, 0.849);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
 }
 .video1{
     display:flex;
