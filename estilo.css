@@ -1,11 +1,23 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: content-box;
     
 }
 body{
    background-image:   linear-gradient(45deg, #46c4c4 0%, #b87998 100%);
 }
+.navbar{
+    background-color: rgba(211, 68, 90, 0.849) ;
+}
+#navbar a{
+    color:white;
+    text-transform: uppercase;
+}    
+#navbar a:hover{
+    color:black;
+}
+
 .acomodar{
     display:flex;  
     flex-direction: column;
@@ -78,6 +90,27 @@ main section ul li{
     font-size:  20px;
     font-weight: bold;
 
+}
+.jumbotron{
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(45deg, #46c4c4 0%, #b87998 100%); 
+}
+.jumbotron h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration:underline;
+}
+.jumbotron p{
+    font-weight: 600px;
+    color:black;
+    font-size:25px ;
+    border: 3px solid  rgba(211, 68, 90, 0.849);
+    display:flex;
+    justify-content:center;
+    background-color: rgba(224, 155, 165, 0.849) ;
+    width: 100%;
+    
 }
 .contenedor{
     display:flex;
