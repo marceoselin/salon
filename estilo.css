@@ -31,7 +31,7 @@ h1{
     height:60px;
     width:40%;
     text-align:center;
-    
+
     font-size: 30px;
     font-style:italic;
 }
@@ -72,11 +72,7 @@ nav ul li a:hover{
     font-size: 20px;
     border: 2px solid  rgba(211, 68, 90, 0.849);
     text-align: center;
-}
-
-    
-
-
+}    
 
 main section ul li{
     display:inline-block;
@@ -101,6 +97,7 @@ main section ul li{
     font-size: 30px;
     font-weight: 600;
     text-decoration:underline;
+    
 }
 .jumbotron p{
     font-weight: 600px;
@@ -181,15 +178,7 @@ main section ul li{
     background-image: url(imagenes/keratina.jpg);
     background-size: cover;
     background-position: center;
-}
-
-
-
-    
-   
-    
-   
-    
+}                  
 .section2{
     min-height: 600px;
     width: 100%;
@@ -198,10 +187,7 @@ main section ul li{
     margin-left: 15px;
     margin-right: 25px;
     gap: 25px;
-    
-    
-    
-}
+}            
 .imag{
     border: 3px solid rgba(211, 68, 90, 0.849);
     cursor:pointer;
@@ -255,9 +241,7 @@ main section ul li{
          gap:3px;
          background-color: rgba(224, 155, 165, 0.849) ;
      }
-}           
-        
-    
+    }                    
 @media only screen  and (min-width:321px) and (max-width:480px) {
     .section2{
         grid-template-columns: 1fr 1fr ;
@@ -271,15 +255,8 @@ main section ul li{
         grid-template-rows: repeat(3, 200px);
         gap:10px;
 
-    }
-}  
-        
-
-    
-    
-   
-
-
+    }               
+}
 @media only screen and (min-width: 481px){
     .section2{
        
@@ -308,6 +285,7 @@ main section ul li{
         grid-row: 2/3;
         
     }
+}
     .galeria{
        
         grid-template-columns: 1fr 1fr 1fr;
@@ -315,15 +293,11 @@ main section ul li{
     } 
     .producto1{
         grid-column: 1/2;
-        grid-row: 1/2;
-        
-       
-     
+        grid-row: 1/2;      
     }
     .producto2{
         grid-column: 2/3;
-        grid-row: 1/2;
-        
+        grid-row: 1/2;    
     }
     .producto3{
         grid-column: 3/4;
@@ -345,12 +319,7 @@ main section ul li{
         grid-row: 2/3;
        
     }   
-}
-    
-    
-
-
-
+        
 
 .centrar{
     text-align: center;
@@ -363,8 +332,7 @@ main section ul li{
     width: 400px;
     height: 40px;
     margin:20px auto;
-    padding: 5px ;
-    
+    padding: 5px ;    
    
 }
 footer div ul li {
