@@ -1,8 +1,6 @@
 h1 {
-  background-color: rgba(224, 155, 165, 0.849);
   padding: 8px;
   margin: 20px auto;
-  border: 5px solid rgba(211, 68, 90, 0.849);
   height: 60px;
   width: 40%;
   text-align: center;
@@ -38,7 +36,6 @@ h2 {
   background-color: rgba(224, 155, 165, 0.849);
   padding: 8px;
   margin: 20px auto;
-  border: 3px solid rgba(211, 68, 90, 0.849);
   width: 40%;
   text-align: center;
   font-style: italic;
@@ -250,36 +247,32 @@ main section ul li {
   background-image: url(imagenes/mechas.jpg);
   background-size: cover;
   background-position: center;
-  background-color: blueviolet;
 }
 
 .imag2 {
   background-image: url(imagenes/mechas-escasas.jpg);
   background-size: cover;
   background-position: center;
-  background-color: blue;
 }
 
 .imag3 {
   background-image: url(imagenes/mechas-cortas.jpg);
   background-size: cover;
   background-position: center;
-  background-color: aqua;
 }
 
 .imag4 {
   background-image: url(./imagenes/colores-varios.webp);
   background-size: cover;
   background-position: center;
-  background-color: coral;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 320) {
   .section2 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: (150px)[2];
-        grid-template-rows: repeat(2, 150px);
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     gap: 20px;
   }
   .acomodar {
@@ -296,8 +289,8 @@ main section ul li {
   .galeria {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: (200px)[3];
-        grid-template-rows: repeat(3, 200px);
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     gap: 3px;
     background-color: rgba(224, 155, 165, 0.849);
   }
@@ -307,15 +300,15 @@ main section ul li {
   .section2 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: (400px)[2];
-        grid-template-rows: repeat(2, 400px);
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     background-color: #73c0c0;
   }
   .galeria {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: (200px)[3];
-        grid-template-rows: repeat(3, 200px);
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
   }
 }
@@ -324,8 +317,8 @@ main section ul li {
   .section2 {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: (400px)[2];
-        grid-template-rows: repeat(2, 400px);
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     background-color: rgba(224, 155, 165, 0.849);
   }
   .imag1 {
@@ -454,7 +447,6 @@ footer div ul {
 
 main section h1 {
   background-color: rgba(224, 155, 165, 0.849);
-  border: 2px solid rgba(211, 68, 90, 0.849);
   -webkit-transition: all 2s;
   transition: all 2s;
 }
@@ -499,7 +491,6 @@ img {
 
 footer div h4 {
   background-color: rgba(224, 155, 165, 0.849);
-  border: 2px solid rgba(211, 68, 90, 0.849);
   height: 40px;
   width: 300px;
   font-style: italic;
@@ -556,7 +547,6 @@ form label {
 
 input {
   background-color: rgba(216, 184, 188, 0.548);
-  border: 1px solid rgba(211, 68, 90, 0.849);
   margin: 10px 10px;
   padding: 10px auto;
   height: 40px;
@@ -587,7 +577,6 @@ input::placeholder {
 }
 
 textarea {
-  border: 1px solid rgba(211, 68, 90, 0.849);
   background-color: rgba(216, 184, 188, 0.548);
   margin-top: 15px;
   margin-left: 10px;

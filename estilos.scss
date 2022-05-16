@@ -6,7 +6,7 @@ $colorBorde: rgba(211, 68, 90, 0.849) ;
     padding: 0px;
     margin: 0px;
     box-sizing: content-box;
-}    
+}
 
 body{
    background-image:   linear-gradient(45deg, #46c4c4 0%, #b87998 100%);
@@ -17,27 +17,26 @@ body{
 #navbar a{
     color:white;
     text-transform: uppercase;
-}    
-#navbar a:hover{
-    color:black;
+        &:hover{
+        color:black;
+        }
 }
-
 h2{
     background-color: $colorFondo;
     padding: 8px;
-    margin:20px auto;
-    border:3px solid  $colorBorde;
+    margin:20px auto;    
     width:40%;
     text-align: center;
     font-style: italic;
     transition:all 1s;
-}    
-h2:hover{
-    transform:scale(1.5, 1);
-    transition: all 1s;
-    color:white;
-    background-color: rgba(187, 112, 112, 0.589);
-}
+        &:hover{
+        transform:scale(1.5, 1);
+        transition: all 1s;
+        color:white;
+        background-color: rgba(187, 112, 112, 0.589);   
+        }    
+    }    
+
 .contenedor0{
     display:flex;
     flex-direction: column;
@@ -61,11 +60,7 @@ nav ul li a:hover{
     text-align: center;
 }
 
-    
-
-
-
-main section ul li{
+    main section ul li{
     display:inline-block;
     background-color:$colorFondo ;
     margin-bottom: 20px;
@@ -79,7 +74,6 @@ main section ul li{
 
 }
 .jumbotron{
-    
     height: 200px;
     width: 100%;
     background-image: linear-gradient(45deg, #46c4c4 0%, #b87998 100%); 
@@ -89,16 +83,16 @@ main section ul li{
         font-weight: 600;
         text-decoration:underline;
         } 
-        p{
-    font-weight: 600px;
-    color:black;
-    font-size:25px ;
-    border: 3px solid  rgba(211, 68, 90, 0.849);
-    display:flex;
-    justify-content:center;
-    background-color: rgba(224, 155, 165, 0.849) ;
-    width: 100%;
-        }   
+           p{
+           font-weight: 600px;
+           color:black;
+           font-size:25px ;
+           border: 3px solid  $colorBorde;
+           display:flex;
+           justify-content:center;
+           background-color: $colorFondo ;
+           width: 100%;
+           }   
 }
 
 .contenedor{
@@ -127,97 +121,82 @@ main section ul li{
 }
 
 .producto{
-    border: 3px solid rgba(211, 68, 90, 0.849);
+    border: 3px solid $colorBorde;
     cursor: pointer;
-}
-.producto:hover{
-    transform: scale(1.05);
-    transition: all 0.75s ;
+        &:hover{
+         transform: scale(1.05);
+         transition: all 0.75s ;
+        }
+}              
+@mixin tamaños ($backsize, $backposit) {
+    background-size: $backsize;
+    background-position: $backposit;
+    
 }
 .producto1{
-   
-    
     background-image: url(imagenes/madre-celulas.png);
-    background-size: cover;
-    background-position: center;
+@include tamaños (cover, center);
 }
 .producto2{
-    
     background-image: url(imagenes/gel-keratina.jpg);
-    background-size: cover;
-    background-position: center;
+@include tamaños (cover, center);
 }
-.producto3{
-    
+.producto3{    
     background-image: url(imagenes/celulas.jpg);
-    background-size: cover;
-    background-position: center;
+@include tamaños (cover, center);
 }
-.producto4{
-    
+.producto4{    
     background-image: url(imagenes/botox.webp);
-    background-size: cover;
-    background-position: center;
+@include tamaños (cover, center);
 } 
-.producto5{
-   
+.producto5{   
     background-image: url(imagenes/ampolla-botox.jpg);
-    background-size: cover;
-    background-position: center;
+@include tamaños (cover, center);
 } 
-.producto6{
-    
+.producto6{   
     background-image: url(imagenes/keratina.jpg);
-    background-size: cover;
-    background-position: center;
+@include tamaños (cover, center);
 }                  
 .section2{
     min-height: 600px;
     width: 100%;
-    background-color:rgba(224, 155, 165, 0.849) ;
+    background-color:$colorFondo ;
     display:grid;
     margin-left: 15px;
     margin-right: 25px;
     gap: 25px;
 }            
 .imag{
-    border: 3px solid rgba(211, 68, 90, 0.849);
+    border: 3px solid $colorBorde;
     cursor:pointer;
     gap:20px;
+        &:hover{
+            transform:scale(1.05);
+            transition: all 0.75s;    
+        }
 }
-.imag:hover{
-    transform:scale(1.05);
-    transition: all 0.75s;
-}
+
 .imag1{
    background-image: url(imagenes/mechas.jpg);
-   background-size: cover;
-   background-position: center;
-    background-color: blueviolet;
-}
+@include tamaños (cover, center);
+}   
 .imag2{
    background-image: url(imagenes/mechas-escasas.jpg);
-   background-size: cover;
-   background-position: center;
-    background-color: blue;
+@include tamaños (cover, center);
 }
 .imag3{
     background-image: url(imagenes/mechas-cortas.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: aqua;
+@include tamaños (cover, center);
 }
 .imag4{
     background-image: url(./imagenes/colores-varios.webp);
-    background-size: cover;
-    background-position: center;
-    background-color: coral;
+@include tamaños (cover, center);
 }
 
 @media only screen and (min-width:0px) and (max-width:320){
     .section2{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 150px);
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
     }
     .acomodar{
@@ -227,46 +206,41 @@ main section ul li{
     .comodar0 h1{
         font-size: 10px;
     }    
-     .galeria{
+    .galeria{
          grid-template-columns: 1fr 1fr;
-         grid-template-rows: repeat(3, 200px);
+         grid-template-rows: 1fr 1fr 1fr;
          gap:3px;
-         background-color: rgba(224, 155, 165, 0.849) ;
-     }
+         background-color: $colorFondo ;
+    }
     }                    
 @media only screen  and (min-width:321px) and (max-width:480px) {
     .section2{
         grid-template-columns: 1fr 1fr ;
-        grid-template-rows: repeat(2, 400px);
+        grid-template-rows: 1fr 1fr;
         
         background-color: rgb(115, 192, 192);
-        
-    }
+    }    
     .galeria{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 200px);
+        grid-template-rows: 1fr 1fr 1fr;
         gap:10px;
-
-    }               
-}
+    }
+}                  
 @media only screen and (min-width: 481px){
     .section2{
-       
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, 400px);
-        background-color:rgba(224, 155, 165, 0.849) ;
+        grid-template-rows: 1fr 1fr;
+        background-color:$colorFondo ;
     }
     
     .imag1{
         grid-column: 1/2;
         grid-row: 1/3;
-       
-    }
+    }   
     .imag2{
         grid-column: 2/3;
         grid-row: 1/2;
-        
-    }
+    }          
     .imag3{
         grid-column: 3/4;
         grid-row: 1/3;
@@ -311,15 +285,13 @@ main section ul li{
         grid-row: 2/3;
        
     }   
-        
-
-.centrar{
+    .centrar{
     text-align: center;
     font-style: italic;
     font-size: 20px;
     text-decoration:underline;
-    background-color:rgba(224, 155, 165, 0.849) ;
-    border: 2px  rgba(211, 68, 90, 0.849);
+    background-color:$colorFondo ;
+    border: 2px  $colorBorde;
     border-style:solid;
     width: 400px;
     height: 40px;
@@ -328,9 +300,9 @@ main section ul li{
    
 }
 footer div ul li {
-    background-color:rgba(224, 155, 165, 0.849) ;
+    background-color:$colorFondo ;
     display:inline-block;
-    border: 2px solid rgba(211, 68, 90, 0.849);
+    border: 2px solid $colorBorde;
     width: 150px;
     padding: 10px;
     text-align: center;
@@ -342,8 +314,7 @@ footer div ul{
     margin-left: 10px;
 } 
 main section h1{
-    background-color:rgba(224, 155, 165, 0.849) ;
-    border: 2px solid rgba(211, 68, 90, 0.849) ;
+    background-color:$colorFondo ;
     transition: all 2s;
     
 }
@@ -354,8 +325,8 @@ main section h1:hover{
     background-color: rgba(187, 112, 112, 0.589);
 } 
 section p {
-    background-color: rgba(224, 155, 165, 0.849);
-    border: 2px solid rgba(211, 68, 90, 0.849);
+    background-color: $colorFondo;
+    border: 2px solid $colorBorde;
     width: 700px;
     height: 50px;
     text-align: center;
@@ -368,7 +339,7 @@ section p {
     margin-left: 10px;
 }
 img{
-    border: 3px solid rgba(211, 68, 90, 0.849);
+    border: 3px solid $colorBorde;
     margin: 15px 500px;
      
 }
@@ -377,8 +348,8 @@ img{
     justify-content: center;
 } 
 footer div h4{
-    background-color: rgba(224, 155, 165, 0.849);
-    border: 2px solid rgba(211, 68, 90, 0.849); 
+    background-color: $colorFondo;
+     
     height: 40px;
     width: 300px;
     font-style: italic;
@@ -390,7 +361,7 @@ footer div h4{
     margin-left: 10px;
 }
 video{
-    border: 2px solid rgba(211, 68, 90, 0.849);
+    border: 2px solid $colorBorde;
     margin-left: 10px;
     margin-bottom: 10px;
     
@@ -403,8 +374,8 @@ video{
 
 
 section h3{
-    background-color: rgba(224, 155, 165, 0.849);
-    border: 2px solid rgba(211, 68, 90, 0.849); 
+    background-color:$colorFondo;
+    border: 2px solid $colorBorde; 
     font-style: italic;
     font-size: 20px;
     text-align: center;
@@ -420,16 +391,16 @@ form label{
     display: block;
     margin-top: 15px;
     margin-left: 10px;
-    background-color: rgba(224, 155, 165, 0.849);
+    background-color: $colorFondo;
     height: 30px;
     width: 160px;
     padding: 10px 5px;
     text-align: center;
-    border: 2px solid rgba(211, 68, 90, 0.849);
+    border: 2px solid $colorBorde;
 } 
 input{
     background-color: rgba(216, 184, 188, 0.548);
-    border: 1px solid rgba(211, 68, 90, 0.849);
+    
     margin: 10px 10px;
     padding: 10px auto;
     height:40px ;
@@ -446,7 +417,7 @@ input::placeholder{
 
 }
 textarea{
-    border: 1px solid rgba(211, 68, 90, 0.849);
+    
     background-color: rgba(216, 184, 188, 0.548);
     margin-top: 15px;
     margin-left: 10px;
@@ -459,6 +430,6 @@ textarea::placeholder{
     color:crimson;
 }
 .color:hover{
-    background-color: rgba(211, 68, 90, 0.849);
+    background-color: $colorBorde;
     color:beige;
 }
