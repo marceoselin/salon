@@ -33,7 +33,6 @@ body {
 }
 
 h2 {
-  background-color: rgba(224, 155, 165, 0.849);
   padding: 8px;
   margin: 20px auto;
   width: 40%;
@@ -112,14 +111,12 @@ main section ul li {
   font-weight: 600px;
   color: black;
   font-size: 25px;
-  border: 3px solid rgba(211, 68, 90, 0.849);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(224, 155, 165, 0.849);
   width: 100%;
 }
 
@@ -283,8 +280,14 @@ main section ul li {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .comodar0 h1 {
+  h1 {
     font-size: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  p {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .galeria {
     -ms-grid-columns: 1fr 1fr;
@@ -431,9 +434,8 @@ main section ul li {
 }
 
 footer div ul li {
-  background-color: rgba(224, 155, 165, 0.849);
   display: inline-block;
-  border: 2px solid rgba(211, 68, 90, 0.849);
+  background-color: rgba(224, 155, 165, 0.849);
   width: 150px;
   padding: 10px;
   text-align: center;
@@ -446,7 +448,6 @@ footer div ul {
 }
 
 main section h1 {
-  background-color: rgba(224, 155, 165, 0.849);
   -webkit-transition: all 2s;
   transition: all 2s;
 }
@@ -461,8 +462,6 @@ main section h1:hover {
 }
 
 section p {
-  background-color: rgba(224, 155, 165, 0.849);
-  border: 2px solid rgba(211, 68, 90, 0.849);
   width: 700px;
   height: 50px;
   text-align: center;
@@ -490,11 +489,10 @@ img {
 }
 
 footer div h4 {
-  background-color: rgba(224, 155, 165, 0.849);
   height: 40px;
   width: 300px;
   font-style: italic;
-  font-size: 18px;
+  font-size: 25px;
   text-align: center;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -518,10 +516,8 @@ video {
 }
 
 section h3 {
-  background-color: rgba(224, 155, 165, 0.849);
-  border: 2px solid rgba(211, 68, 90, 0.849);
   font-style: italic;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   height: 40px;
   width: 300px;
@@ -537,12 +533,10 @@ form label {
   display: block;
   margin-top: 15px;
   margin-left: 10px;
-  background-color: rgba(224, 155, 165, 0.849);
   height: 30px;
   width: 160px;
   padding: 10px 5px;
   text-align: center;
-  border: 2px solid rgba(211, 68, 90, 0.849);
 }
 
 input {
