@@ -449,34 +449,6 @@ footer i:hover {
   color: black;
 }
 
-.centrar {
-  text-align: center;
-  font-style: italic;
-  font-size: 20px;
-  text-decoration: underline;
-  background-color: rgba(224, 155, 165, 0.849);
-  border: 2px rgba(211, 68, 90, 0.849);
-  border-style: solid;
-  width: 400px;
-  height: 40px;
-  margin: 20px auto;
-  padding: 5px;
-}
-
-footer div ul li {
-  display: inline-block;
-  background-color: rgba(224, 155, 165, 0.849);
-  width: 150px;
-  padding: 10px;
-  text-align: center;
-  font-size: 20px;
-}
-
-footer div ul {
-  list-style: none;
-  margin-left: 10px;
-}
-
 main section h1 {
   -webkit-transition: all 2s;
   transition: all 2s;
