@@ -23,9 +23,10 @@ body{
 }
 h2{
     padding: 8px;
-    margin:20px auto;    
-    width:40%;
+    margin:10px auto;    
+    width:60%;
     text-align: center;
+    font-weight: 600px;
     font-style: italic;
     transition:all 1s;
         &:hover{
@@ -40,56 +41,56 @@ h2{
     display:flex;
     flex-direction: column;
     justify-content: center;
-}
-nav ul li a:hover{
-    color:rgba(100, 10, 23, 0.849) ;
-    background-color:$colorBorde ;
-    
-}
- header nav ul li{
-    display:inline-block;
-    background-color:$colorFondo ;
-    height: 20px;
-    width: 100px;
-    margin: 5px;
-    padding: 10px 20px;
-    font-style: italic;
-    font-size: 20px;
-    border: 2px solid  $colorBorde;
-    text-align: center;
+    height: 380px;
+    background-image:url(imagenes/multicolor.jpg);
+    background-size: cover;
+
 }
 
-    main section ul li{
+main section ul li{
     display:inline-block;
-    background-color:$colorFondo ;
     margin-bottom: 20px;
     padding: 10px;
     height: 30px;
     width: 30;
-    border:3px solid $colorBorde;
     font-style:italic;
-    font-size:  20px;
-    font-weight: bold;
+    
+    font-size:  30px;
+    font-weight: 500
+    
 
 }
 .jumbotron{
-    height: 200px;
+    height: 150px;
     width: 100%;
-    background-image: linear-gradient(45deg, #46c4c4 0%, #b87998 100%); 
+    background-image: linear-gradient(45deg, #46c4c4 0%, #b87998 100%);
+    display: flex; 
 
-        h1{
-        font-size: 30px;
-        font-weight: 600;
-        text-decoration:underline;
-        } 
-           p{
-           font-weight: 600px;
-           color:black;
-           font-size:25px ;
-           display:flex;
-           justify-content:center;
-           width: 100%;
-           }   
+}
+.jumbotron h2{
+    font-size: 20px;
+    font-weight: 500px;
+}
+.display-4{
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: italic;
+}
+.lead{
+    font-weight: 600px;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    
+
+}
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px auto;
+    
 }
 
 .contenedor{
@@ -107,12 +108,13 @@ nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     flex-wrap:wrap;
+     
 }
 .galeria{
     min-height: 400px;
     width: 90%;
     background-color:gray;
-    margin:15px auto;
+    margin:25px auto;
     display:grid;
     
 }
@@ -289,28 +291,7 @@ nav ul li a:hover{
         grid-row: 2/3;
        
     }
-    footer{
-        height: auto;
-        width: 100%;
-        background-color: $colorBorde;
-        text-align: center;
-        padding: 20px;
-        p{
-            font-size: 25px;
-            text-transform: uppercase;
-            letter-spacing: 10px;
-            font-family: italic;
-            margin-bottom: 20px;
-        }
-    }    
-    footer i{
-        font-size: 40px;
-        color: white;
-        letter-spacing: 18px;
-        &:hover{
-            color: black;
-        }
-    }       
+           
 
 main section h1{
     transition: all 2s;
@@ -323,7 +304,7 @@ main section h1:hover{
     background-color: rgba(187, 112, 112, 0.589);
 } 
 section p {
-    width: 700px;
+    width: 800px;
     height: 50px;
     text-align: center;
     padding-top: 12px;
@@ -336,89 +317,118 @@ section p {
 }
 img{
     border: 3px solid $colorBorde;
-    margin: 15px 500px;
+    padding: 5px 500px;
+    
      
 }
 .centrar_imagen{
     display:flex;
     justify-content: center;
+    
 } 
-footer div h4{
-    height: 40px;
-    width: 300px;
-    font-style: italic;
-    font-size: 25px;
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
+
 video{
     border: 2px solid $colorBorde;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    background-position: cover;
     
 }
 .video1{
     display:flex;
-    justify-content: flex-start;
+    justify-content: center;
 }    
     
 
 
 section h3{
     font-style: italic;
-    font-size: 25px;
+    font-size: 2p0x;
     text-align: center;
     height: 40px;
-    width: 300px; 
+    width: 100%; 
     padding-top: 12px;
     margin-left: 10px;
 }
-div ul li a:hover{
-    color:rgba(100, 10, 23, 0.849);
+
+
+.sectionform{
+    width: 75%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color:$colorBorde;
 }
-form label{
-    display: block;
-    margin-top: 15px;
-    margin-left: 10px;
-    height: 30px;
-    width: 160px;
-    padding: 10px 5px;
-    text-align: center;
     
-} 
-input{
-    background-color: rgba(216, 184, 188, 0.548);
-    margin: 10px 10px;
-    padding: 10px auto;
-    height:40px ;
-    transition:all 2s;
+.sectionform .titulo{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    font-style: italic;
+}
 
+.form{
+    text-align: center;
 }
-input:focus{
-    color:#b87998;
-    border: none;
-    font-size: 30px;
-}
-input::placeholder{
-    color:crimson;
-
-}
-textarea{
-    background-color: rgba(216, 184, 188, 0.548);
-    margin-top: 15px;
+.form label{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 20px;
+    font-weight: 600px;
+    text-align: left;
     margin-left: 10px;
-    padding-right: 0px;
-    padding-bottom: 20px;
-    transition:all 1s;   
+    padding-top: 10px;
+    font-style: italic;
+}
+.form input{
+    width: 60%;
+    border:none;
+    border-bottom: solid 1px black;
+    background-color:$colorFondo ;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 600px;
+    font-style: italic;
+
+}
+.form textarea{
+    width: 60%;
+    border:none;
+    border-bottom:solid 1px black ;
+    background-color: $colorFondo;
+    resize: none;
 }
 
-textarea::placeholder{
-    color:crimson;
-}
-.color:hover{
+    
+   
+    
+
+
+
+footer{
+    height: auto;
+    width: 100%;
     background-color: $colorBorde;
-    color:beige;
+    text-align: center;
+    padding: 20px;
+    p{
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-family: italic;
+        margin-bottom: 20px;
+    }
+}    
+footer i{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 18px;
+    &:hover{
+        color: black;
+    }
 }
+.jumbotron h2{
+    font-size: 25px;
+    text-transform: uppercase;
+
+} 
+
