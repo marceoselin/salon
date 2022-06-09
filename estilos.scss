@@ -41,9 +41,10 @@ h2{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    height: 380px;
+     
     background-image:url(imagenes/multicolor.jpg);
     background-size: cover;
+    background-position: center;
 
 }
 
@@ -51,7 +52,7 @@ main section ul li{
     display:inline-block;
     margin-bottom: 20px;
     padding: 10px;
-    height: 30px;
+    height: 50px;
     width: 30;
     font-style:italic;
     
@@ -96,6 +97,7 @@ main section ul li{
 .contenedor{
     display:flex;
     justify-content: center;
+    
 }
 .tratamiento{
     display:flex;
