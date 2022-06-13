@@ -24,7 +24,7 @@ body{
 h2{
     padding: 8px;
     margin:10px auto;    
-    width:60%;
+    width:100%;
     text-align: center;
     font-weight: 600px;
     font-style: italic;
@@ -39,9 +39,9 @@ h2{
 
 .contenedor0{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-     
+    width: 100%; 
     background-image:url(imagenes/multicolor.jpg);
     background-size: cover;
     background-position: center;
@@ -67,6 +67,10 @@ main section ul li{
     background-image: linear-gradient(45deg, #46c4c4 0%, #b87998 100%);
     display: flex; 
 
+}
+.container{
+    display: flex;
+    justify-content: center;
 }
 .jumbotron h2{
     font-size: 20px;
@@ -97,6 +101,7 @@ main section ul li{
 .contenedor{
     display:flex;
     justify-content: center;
+    
     
 }
 .tratamiento{
@@ -205,13 +210,14 @@ main section ul li{
         justify-content: center;
     }
     h1{
-        font-size: 10px;
         flex-wrap: wrap;
+        width: 100%;
     }
     p{
         flex-wrap: wrap;
     }
-    h2{
+    h2{ 
+        width: 100%; 
         flex-wrap: wrap;
     }    
     .galeria{
